@@ -1,0 +1,32 @@
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\Keil\ARM Start\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling PWM.c...
+Hardware\PWM.c(23): error:  #101: "GPIO_InitStructure" has already been declared in the current scope
+  	GPIO_InitTypeDef GPIO_InitStructure;
+Hardware\PWM.c(40): error:  #101: "TIM_TimeBaseInitStructure" has already been declared in the current scope
+  	TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStructure;
+Hardware\PWM.c(56): error:  #101: "TIM_OCInitStructure" has already been declared in the current scope
+  	TIM_OCInitTypeDef TIM_OCInitStructure;
+Hardware\PWM.c: 0 warnings, 3 errors
+compiling LED.c...
+compiling Key.c...
+Hardware\Key.c(16): error:  #101: "GPIO_InitStructure" has already been declared in the current scope
+  	GPIO_InitTypeDef GPIO_InitStructure;
+Hardware\Key.c: 0 warnings, 1 error
+compiling main.c...
+User\main.c(40): warning:  #69-D: integer conversion resulted in truncation
+  	Pwm_Component.PSC1 = 
+efault_PSC;
+User\main.c(42): warning:  #69-D: integer conversion resulted in truncation
+  	Pwm_Component.PSC2 = 
+efault_PSC;
+User\main.c(60): warning:  #69-D: integer conversion resulted in truncation
+  			Pwm_Component.PSC1 = 
+efault_PSC;
+User\main.c(62): warning:  #69-D: integer conversion resulted in truncation
+  			Pwm_Component.PSC2 = 
+efault_PSC;
+User\main.c: 4 warnings, 0 errors
+".\Objects\Project.axf" - 4 Error(s), 4 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:02

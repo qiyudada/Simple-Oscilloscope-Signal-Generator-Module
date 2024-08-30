@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "stm32f10x.h": "c",
+        "pwm.h": "c",
+        "led.h": "c",
+        "key.h": "c"
+    }
+}
