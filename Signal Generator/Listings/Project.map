@@ -149,7 +149,6 @@ Section Cross References
     pwm.o(i.PWM_Init) refers to stm32f10x_tim.o(i.TIM_OCStructInit) for TIM_OCStructInit
     pwm.o(i.PWM_Init) refers to stm32f10x_tim.o(i.TIM_OC1Init) for TIM_OC1Init
     pwm.o(i.PWM_Init) refers to stm32f10x_tim.o(i.TIM_Cmd) for TIM_Cmd
-    pwm.o(i.PWM_Init) refers to pwm.o(.data) for Pwm_Component
     pwm.o(i.TIM2_PWM_GetCompare1) refers to pwm.o(.data) for Pwm_Component
     pwm.o(i.TIM2_PWM_GetDuty) refers to pwm.o(.data) for Pwm_Component
     pwm.o(i.TIM2_PWM_SetCompare1) refers to stm32f10x_tim.o(i.TIM_SetCompare1) for TIM_SetCompare1
@@ -935,41 +934,41 @@ Image Symbol Table
     i.OLED_WriteCommand                      0x08000958   Section        0  oled.o(i.OLED_WriteCommand)
     i.OLED_WriteData                         0x08000978   Section        0  oled.o(i.OLED_WriteData)
     i.PWM_Init                               0x08000998   Section        0  pwm.o(i.PWM_Init)
-    i.PendSV_Handler                         0x08000a38   Section        0  stm32f10x_it.o(i.PendSV_Handler)
-    i.RCC_APB1PeriphClockCmd                 0x08000a3c   Section        0  stm32f10x_rcc.o(i.RCC_APB1PeriphClockCmd)
-    i.RCC_APB2PeriphClockCmd                 0x08000a5c   Section        0  stm32f10x_rcc.o(i.RCC_APB2PeriphClockCmd)
-    i.SVC_Handler                            0x08000a7c   Section        0  stm32f10x_it.o(i.SVC_Handler)
-    i.SetSysClock                            0x08000a7e   Section        0  system_stm32f10x.o(i.SetSysClock)
-    SetSysClock                              0x08000a7f   Thumb Code     8  system_stm32f10x.o(i.SetSysClock)
-    i.SetSysClockTo72                        0x08000a88   Section        0  system_stm32f10x.o(i.SetSysClockTo72)
-    SetSysClockTo72                          0x08000a89   Thumb Code   214  system_stm32f10x.o(i.SetSysClockTo72)
-    i.SysTick_Handler                        0x08000b68   Section        0  stm32f10x_it.o(i.SysTick_Handler)
-    i.SystemInit                             0x08000b6c   Section        0  system_stm32f10x.o(i.SystemInit)
-    i.TI1_Config                             0x08000bcc   Section        0  stm32f10x_tim.o(i.TI1_Config)
-    TI1_Config                               0x08000bcd   Thumb Code   108  stm32f10x_tim.o(i.TI1_Config)
-    i.TI2_Config                             0x08000c4c   Section        0  stm32f10x_tim.o(i.TI2_Config)
-    TI2_Config                               0x08000c4d   Thumb Code   130  stm32f10x_tim.o(i.TI2_Config)
-    i.TIM2_PWM_GetCompare1                   0x08000ce4   Section        0  pwm.o(i.TIM2_PWM_GetCompare1)
-    i.TIM2_PWM_GetDuty                       0x08000d04   Section        0  pwm.o(i.TIM2_PWM_GetDuty)
-    i.TIM2_PWM_SetCompare1                   0x08000d10   Section        0  pwm.o(i.TIM2_PWM_SetCompare1)
-    i.TIM2_PWM_SetPrescaler                  0x08000d20   Section        0  pwm.o(i.TIM2_PWM_SetPrescaler)
-    i.TIM_Cmd                                0x08000d30   Section        0  stm32f10x_tim.o(i.TIM_Cmd)
-    i.TIM_GetCapture1                        0x08000d48   Section        0  stm32f10x_tim.o(i.TIM_GetCapture1)
-    i.TIM_GetCapture2                        0x08000d4e   Section        0  stm32f10x_tim.o(i.TIM_GetCapture2)
-    i.TIM_InternalClockConfig                0x08000d54   Section        0  stm32f10x_tim.o(i.TIM_InternalClockConfig)
-    i.TIM_OC1Init                            0x08000d60   Section        0  stm32f10x_tim.o(i.TIM_OC1Init)
-    i.TIM_OCStructInit                       0x08000df8   Section        0  stm32f10x_tim.o(i.TIM_OCStructInit)
-    i.TIM_PWMIConfig                         0x08000e0c   Section        0  stm32f10x_tim.o(i.TIM_PWMIConfig)
-    i.TIM_PrescalerConfig                    0x08000e88   Section        0  stm32f10x_tim.o(i.TIM_PrescalerConfig)
-    i.TIM_SelectInputTrigger                 0x08000e8e   Section        0  stm32f10x_tim.o(i.TIM_SelectInputTrigger)
-    i.TIM_SelectSlaveMode                    0x08000ea0   Section        0  stm32f10x_tim.o(i.TIM_SelectSlaveMode)
-    i.TIM_SetCompare1                        0x08000eb2   Section        0  stm32f10x_tim.o(i.TIM_SetCompare1)
-    i.TIM_SetIC1Prescaler                    0x08000eb6   Section        0  stm32f10x_tim.o(i.TIM_SetIC1Prescaler)
-    i.TIM_SetIC2Prescaler                    0x08000ec8   Section        0  stm32f10x_tim.o(i.TIM_SetIC2Prescaler)
-    i.TIM_TimeBaseInit                       0x08000ee4   Section        0  stm32f10x_tim.o(i.TIM_TimeBaseInit)
-    i.UsageFault_Handler                     0x08000f88   Section        0  stm32f10x_it.o(i.UsageFault_Handler)
-    i.main                                   0x08000f8c   Section        0  main.o(i.main)
-    .constdata                               0x08001110   Section     1520  oled.o(.constdata)
+    i.PendSV_Handler                         0x08000a30   Section        0  stm32f10x_it.o(i.PendSV_Handler)
+    i.RCC_APB1PeriphClockCmd                 0x08000a34   Section        0  stm32f10x_rcc.o(i.RCC_APB1PeriphClockCmd)
+    i.RCC_APB2PeriphClockCmd                 0x08000a54   Section        0  stm32f10x_rcc.o(i.RCC_APB2PeriphClockCmd)
+    i.SVC_Handler                            0x08000a74   Section        0  stm32f10x_it.o(i.SVC_Handler)
+    i.SetSysClock                            0x08000a76   Section        0  system_stm32f10x.o(i.SetSysClock)
+    SetSysClock                              0x08000a77   Thumb Code     8  system_stm32f10x.o(i.SetSysClock)
+    i.SetSysClockTo72                        0x08000a80   Section        0  system_stm32f10x.o(i.SetSysClockTo72)
+    SetSysClockTo72                          0x08000a81   Thumb Code   214  system_stm32f10x.o(i.SetSysClockTo72)
+    i.SysTick_Handler                        0x08000b60   Section        0  stm32f10x_it.o(i.SysTick_Handler)
+    i.SystemInit                             0x08000b64   Section        0  system_stm32f10x.o(i.SystemInit)
+    i.TI1_Config                             0x08000bc4   Section        0  stm32f10x_tim.o(i.TI1_Config)
+    TI1_Config                               0x08000bc5   Thumb Code   108  stm32f10x_tim.o(i.TI1_Config)
+    i.TI2_Config                             0x08000c44   Section        0  stm32f10x_tim.o(i.TI2_Config)
+    TI2_Config                               0x08000c45   Thumb Code   130  stm32f10x_tim.o(i.TI2_Config)
+    i.TIM2_PWM_GetCompare1                   0x08000cdc   Section        0  pwm.o(i.TIM2_PWM_GetCompare1)
+    i.TIM2_PWM_GetDuty                       0x08000cfc   Section        0  pwm.o(i.TIM2_PWM_GetDuty)
+    i.TIM2_PWM_SetCompare1                   0x08000d08   Section        0  pwm.o(i.TIM2_PWM_SetCompare1)
+    i.TIM2_PWM_SetPrescaler                  0x08000d18   Section        0  pwm.o(i.TIM2_PWM_SetPrescaler)
+    i.TIM_Cmd                                0x08000d28   Section        0  stm32f10x_tim.o(i.TIM_Cmd)
+    i.TIM_GetCapture1                        0x08000d40   Section        0  stm32f10x_tim.o(i.TIM_GetCapture1)
+    i.TIM_GetCapture2                        0x08000d46   Section        0  stm32f10x_tim.o(i.TIM_GetCapture2)
+    i.TIM_InternalClockConfig                0x08000d4c   Section        0  stm32f10x_tim.o(i.TIM_InternalClockConfig)
+    i.TIM_OC1Init                            0x08000d58   Section        0  stm32f10x_tim.o(i.TIM_OC1Init)
+    i.TIM_OCStructInit                       0x08000df0   Section        0  stm32f10x_tim.o(i.TIM_OCStructInit)
+    i.TIM_PWMIConfig                         0x08000e04   Section        0  stm32f10x_tim.o(i.TIM_PWMIConfig)
+    i.TIM_PrescalerConfig                    0x08000e80   Section        0  stm32f10x_tim.o(i.TIM_PrescalerConfig)
+    i.TIM_SelectInputTrigger                 0x08000e86   Section        0  stm32f10x_tim.o(i.TIM_SelectInputTrigger)
+    i.TIM_SelectSlaveMode                    0x08000e98   Section        0  stm32f10x_tim.o(i.TIM_SelectSlaveMode)
+    i.TIM_SetCompare1                        0x08000eaa   Section        0  stm32f10x_tim.o(i.TIM_SetCompare1)
+    i.TIM_SetIC1Prescaler                    0x08000eae   Section        0  stm32f10x_tim.o(i.TIM_SetIC1Prescaler)
+    i.TIM_SetIC2Prescaler                    0x08000ec0   Section        0  stm32f10x_tim.o(i.TIM_SetIC2Prescaler)
+    i.TIM_TimeBaseInit                       0x08000edc   Section        0  stm32f10x_tim.o(i.TIM_TimeBaseInit)
+    i.UsageFault_Handler                     0x08000f80   Section        0  stm32f10x_it.o(i.UsageFault_Handler)
+    i.main                                   0x08000f84   Section        0  main.o(i.main)
+    .constdata                               0x08001108   Section     1520  oled.o(.constdata)
     .data                                    0x20000000   Section       12  pwm.o(.data)
     .data                                    0x2000000c   Section        4  main.o(.data)
     Key_Value                                0x2000000c   Data           4  main.o(.data)
@@ -1159,36 +1158,36 @@ Image Symbol Table
     OLED_ShowString                          0x08000931   Thumb Code    40  oled.o(i.OLED_ShowString)
     OLED_WriteCommand                        0x08000959   Thumb Code    32  oled.o(i.OLED_WriteCommand)
     OLED_WriteData                           0x08000979   Thumb Code    32  oled.o(i.OLED_WriteData)
-    PWM_Init                                 0x08000999   Thumb Code   152  pwm.o(i.PWM_Init)
-    PendSV_Handler                           0x08000a39   Thumb Code     2  stm32f10x_it.o(i.PendSV_Handler)
-    RCC_APB1PeriphClockCmd                   0x08000a3d   Thumb Code    26  stm32f10x_rcc.o(i.RCC_APB1PeriphClockCmd)
-    RCC_APB2PeriphClockCmd                   0x08000a5d   Thumb Code    26  stm32f10x_rcc.o(i.RCC_APB2PeriphClockCmd)
-    SVC_Handler                              0x08000a7d   Thumb Code     2  stm32f10x_it.o(i.SVC_Handler)
-    SysTick_Handler                          0x08000b69   Thumb Code     2  stm32f10x_it.o(i.SysTick_Handler)
-    SystemInit                               0x08000b6d   Thumb Code    78  system_stm32f10x.o(i.SystemInit)
-    TIM2_PWM_GetCompare1                     0x08000ce5   Thumb Code    22  pwm.o(i.TIM2_PWM_GetCompare1)
-    TIM2_PWM_GetDuty                         0x08000d05   Thumb Code     6  pwm.o(i.TIM2_PWM_GetDuty)
-    TIM2_PWM_SetCompare1                     0x08000d11   Thumb Code    16  pwm.o(i.TIM2_PWM_SetCompare1)
-    TIM2_PWM_SetPrescaler                    0x08000d21   Thumb Code    16  pwm.o(i.TIM2_PWM_SetPrescaler)
-    TIM_Cmd                                  0x08000d31   Thumb Code    24  stm32f10x_tim.o(i.TIM_Cmd)
-    TIM_GetCapture1                          0x08000d49   Thumb Code     6  stm32f10x_tim.o(i.TIM_GetCapture1)
-    TIM_GetCapture2                          0x08000d4f   Thumb Code     6  stm32f10x_tim.o(i.TIM_GetCapture2)
-    TIM_InternalClockConfig                  0x08000d55   Thumb Code    12  stm32f10x_tim.o(i.TIM_InternalClockConfig)
-    TIM_OC1Init                              0x08000d61   Thumb Code   132  stm32f10x_tim.o(i.TIM_OC1Init)
-    TIM_OCStructInit                         0x08000df9   Thumb Code    20  stm32f10x_tim.o(i.TIM_OCStructInit)
-    TIM_PWMIConfig                           0x08000e0d   Thumb Code   124  stm32f10x_tim.o(i.TIM_PWMIConfig)
-    TIM_PrescalerConfig                      0x08000e89   Thumb Code     6  stm32f10x_tim.o(i.TIM_PrescalerConfig)
-    TIM_SelectInputTrigger                   0x08000e8f   Thumb Code    18  stm32f10x_tim.o(i.TIM_SelectInputTrigger)
-    TIM_SelectSlaveMode                      0x08000ea1   Thumb Code    18  stm32f10x_tim.o(i.TIM_SelectSlaveMode)
-    TIM_SetCompare1                          0x08000eb3   Thumb Code     4  stm32f10x_tim.o(i.TIM_SetCompare1)
-    TIM_SetIC1Prescaler                      0x08000eb7   Thumb Code    18  stm32f10x_tim.o(i.TIM_SetIC1Prescaler)
-    TIM_SetIC2Prescaler                      0x08000ec9   Thumb Code    26  stm32f10x_tim.o(i.TIM_SetIC2Prescaler)
-    TIM_TimeBaseInit                         0x08000ee5   Thumb Code   122  stm32f10x_tim.o(i.TIM_TimeBaseInit)
-    UsageFault_Handler                       0x08000f89   Thumb Code     4  stm32f10x_it.o(i.UsageFault_Handler)
-    main                                     0x08000f8d   Thumb Code   352  main.o(i.main)
-    OLED_F8x16                               0x08001110   Data        1520  oled.o(.constdata)
-    Region$$Table$$Base                      0x08001700   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08001720   Number         0  anon$$obj.o(Region$$Table)
+    PWM_Init                                 0x08000999   Thumb Code   146  pwm.o(i.PWM_Init)
+    PendSV_Handler                           0x08000a31   Thumb Code     2  stm32f10x_it.o(i.PendSV_Handler)
+    RCC_APB1PeriphClockCmd                   0x08000a35   Thumb Code    26  stm32f10x_rcc.o(i.RCC_APB1PeriphClockCmd)
+    RCC_APB2PeriphClockCmd                   0x08000a55   Thumb Code    26  stm32f10x_rcc.o(i.RCC_APB2PeriphClockCmd)
+    SVC_Handler                              0x08000a75   Thumb Code     2  stm32f10x_it.o(i.SVC_Handler)
+    SysTick_Handler                          0x08000b61   Thumb Code     2  stm32f10x_it.o(i.SysTick_Handler)
+    SystemInit                               0x08000b65   Thumb Code    78  system_stm32f10x.o(i.SystemInit)
+    TIM2_PWM_GetCompare1                     0x08000cdd   Thumb Code    22  pwm.o(i.TIM2_PWM_GetCompare1)
+    TIM2_PWM_GetDuty                         0x08000cfd   Thumb Code     6  pwm.o(i.TIM2_PWM_GetDuty)
+    TIM2_PWM_SetCompare1                     0x08000d09   Thumb Code    16  pwm.o(i.TIM2_PWM_SetCompare1)
+    TIM2_PWM_SetPrescaler                    0x08000d19   Thumb Code    16  pwm.o(i.TIM2_PWM_SetPrescaler)
+    TIM_Cmd                                  0x08000d29   Thumb Code    24  stm32f10x_tim.o(i.TIM_Cmd)
+    TIM_GetCapture1                          0x08000d41   Thumb Code     6  stm32f10x_tim.o(i.TIM_GetCapture1)
+    TIM_GetCapture2                          0x08000d47   Thumb Code     6  stm32f10x_tim.o(i.TIM_GetCapture2)
+    TIM_InternalClockConfig                  0x08000d4d   Thumb Code    12  stm32f10x_tim.o(i.TIM_InternalClockConfig)
+    TIM_OC1Init                              0x08000d59   Thumb Code   132  stm32f10x_tim.o(i.TIM_OC1Init)
+    TIM_OCStructInit                         0x08000df1   Thumb Code    20  stm32f10x_tim.o(i.TIM_OCStructInit)
+    TIM_PWMIConfig                           0x08000e05   Thumb Code   124  stm32f10x_tim.o(i.TIM_PWMIConfig)
+    TIM_PrescalerConfig                      0x08000e81   Thumb Code     6  stm32f10x_tim.o(i.TIM_PrescalerConfig)
+    TIM_SelectInputTrigger                   0x08000e87   Thumb Code    18  stm32f10x_tim.o(i.TIM_SelectInputTrigger)
+    TIM_SelectSlaveMode                      0x08000e99   Thumb Code    18  stm32f10x_tim.o(i.TIM_SelectSlaveMode)
+    TIM_SetCompare1                          0x08000eab   Thumb Code     4  stm32f10x_tim.o(i.TIM_SetCompare1)
+    TIM_SetIC1Prescaler                      0x08000eaf   Thumb Code    18  stm32f10x_tim.o(i.TIM_SetIC1Prescaler)
+    TIM_SetIC2Prescaler                      0x08000ec1   Thumb Code    26  stm32f10x_tim.o(i.TIM_SetIC2Prescaler)
+    TIM_TimeBaseInit                         0x08000edd   Thumb Code   122  stm32f10x_tim.o(i.TIM_TimeBaseInit)
+    UsageFault_Handler                       0x08000f81   Thumb Code     4  stm32f10x_it.o(i.UsageFault_Handler)
+    main                                     0x08000f85   Thumb Code   352  main.o(i.main)
+    OLED_F8x16                               0x08001108   Data        1520  oled.o(.constdata)
+    Region$$Table$$Base                      0x080016f8   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08001718   Number         0  anon$$obj.o(Region$$Table)
     Pwm_Component                            0x20000000   Data          12  pwm.o(.data)
     __libspace_start                         0x20000010   Data          96  libspace.o(.bss)
     __temporary_stack_top$libspace           0x20000070   Data           0  libspace.o(.bss)
@@ -1201,9 +1200,9 @@ Memory Map of the image
 
   Image Entry point : 0x080000ed
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00001730, Max: 0x00010000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00001728, Max: 0x00010000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00001720, Max: 0x00010000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00001718, Max: 0x00010000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -1303,51 +1302,51 @@ Memory Map of the image
     0x08000930   0x08000930   0x00000028   Code   RO         3406    i.OLED_ShowString   oled.o
     0x08000958   0x08000958   0x00000020   Code   RO         3407    i.OLED_WriteCommand  oled.o
     0x08000978   0x08000978   0x00000020   Code   RO         3408    i.OLED_WriteData    oled.o
-    0x08000998   0x08000998   0x000000a0   Code   RO         3501    i.PWM_Init          pwm.o
-    0x08000a38   0x08000a38   0x00000002   Code   RO         3688    i.PendSV_Handler    stm32f10x_it.o
-    0x08000a3a   0x08000a3a   0x00000002   PAD
-    0x08000a3c   0x08000a3c   0x00000020   Code   RO         1775    i.RCC_APB1PeriphClockCmd  stm32f10x_rcc.o
-    0x08000a5c   0x08000a5c   0x00000020   Code   RO         1777    i.RCC_APB2PeriphClockCmd  stm32f10x_rcc.o
-    0x08000a7c   0x08000a7c   0x00000002   Code   RO         3689    i.SVC_Handler       stm32f10x_it.o
-    0x08000a7e   0x08000a7e   0x00000008   Code   RO           24    i.SetSysClock       system_stm32f10x.o
-    0x08000a86   0x08000a86   0x00000002   PAD
-    0x08000a88   0x08000a88   0x000000e0   Code   RO           25    i.SetSysClockTo72   system_stm32f10x.o
-    0x08000b68   0x08000b68   0x00000002   Code   RO         3690    i.SysTick_Handler   stm32f10x_it.o
-    0x08000b6a   0x08000b6a   0x00000002   PAD
-    0x08000b6c   0x08000b6c   0x00000060   Code   RO           27    i.SystemInit        system_stm32f10x.o
-    0x08000bcc   0x08000bcc   0x00000080   Code   RO         2405    i.TI1_Config        stm32f10x_tim.o
-    0x08000c4c   0x08000c4c   0x00000098   Code   RO         2406    i.TI2_Config        stm32f10x_tim.o
-    0x08000ce4   0x08000ce4   0x00000020   Code   RO         3502    i.TIM2_PWM_GetCompare1  pwm.o
-    0x08000d04   0x08000d04   0x0000000c   Code   RO         3503    i.TIM2_PWM_GetDuty  pwm.o
-    0x08000d10   0x08000d10   0x00000010   Code   RO         3504    i.TIM2_PWM_SetCompare1  pwm.o
-    0x08000d20   0x08000d20   0x00000010   Code   RO         3505    i.TIM2_PWM_SetPrescaler  pwm.o
-    0x08000d30   0x08000d30   0x00000018   Code   RO         2421    i.TIM_Cmd           stm32f10x_tim.o
-    0x08000d48   0x08000d48   0x00000006   Code   RO         2436    i.TIM_GetCapture1   stm32f10x_tim.o
-    0x08000d4e   0x08000d4e   0x00000006   Code   RO         2437    i.TIM_GetCapture2   stm32f10x_tim.o
-    0x08000d54   0x08000d54   0x0000000c   Code   RO         2448    i.TIM_InternalClockConfig  stm32f10x_tim.o
-    0x08000d60   0x08000d60   0x00000098   Code   RO         2450    i.TIM_OC1Init       stm32f10x_tim.o
-    0x08000df8   0x08000df8   0x00000014   Code   RO         2468    i.TIM_OCStructInit  stm32f10x_tim.o
-    0x08000e0c   0x08000e0c   0x0000007c   Code   RO         2469    i.TIM_PWMIConfig    stm32f10x_tim.o
-    0x08000e88   0x08000e88   0x00000006   Code   RO         2470    i.TIM_PrescalerConfig  stm32f10x_tim.o
-    0x08000e8e   0x08000e8e   0x00000012   Code   RO         2474    i.TIM_SelectInputTrigger  stm32f10x_tim.o
-    0x08000ea0   0x08000ea0   0x00000012   Code   RO         2479    i.TIM_SelectSlaveMode  stm32f10x_tim.o
-    0x08000eb2   0x08000eb2   0x00000004   Code   RO         2482    i.TIM_SetCompare1   stm32f10x_tim.o
-    0x08000eb6   0x08000eb6   0x00000012   Code   RO         2487    i.TIM_SetIC1Prescaler  stm32f10x_tim.o
-    0x08000ec8   0x08000ec8   0x0000001a   Code   RO         2488    i.TIM_SetIC2Prescaler  stm32f10x_tim.o
-    0x08000ee2   0x08000ee2   0x00000002   PAD
-    0x08000ee4   0x08000ee4   0x000000a4   Code   RO         2492    i.TIM_TimeBaseInit  stm32f10x_tim.o
-    0x08000f88   0x08000f88   0x00000004   Code   RO         3691    i.UsageFault_Handler  stm32f10x_it.o
-    0x08000f8c   0x08000f8c   0x00000184   Code   RO         3650    i.main              main.o
-    0x08001110   0x08001110   0x000005f0   Data   RO         3409    .constdata          oled.o
-    0x08001700   0x08001700   0x00000020   Data   RO         3905    Region$$Table       anon$$obj.o
+    0x08000998   0x08000998   0x00000098   Code   RO         3501    i.PWM_Init          pwm.o
+    0x08000a30   0x08000a30   0x00000002   Code   RO         3688    i.PendSV_Handler    stm32f10x_it.o
+    0x08000a32   0x08000a32   0x00000002   PAD
+    0x08000a34   0x08000a34   0x00000020   Code   RO         1775    i.RCC_APB1PeriphClockCmd  stm32f10x_rcc.o
+    0x08000a54   0x08000a54   0x00000020   Code   RO         1777    i.RCC_APB2PeriphClockCmd  stm32f10x_rcc.o
+    0x08000a74   0x08000a74   0x00000002   Code   RO         3689    i.SVC_Handler       stm32f10x_it.o
+    0x08000a76   0x08000a76   0x00000008   Code   RO           24    i.SetSysClock       system_stm32f10x.o
+    0x08000a7e   0x08000a7e   0x00000002   PAD
+    0x08000a80   0x08000a80   0x000000e0   Code   RO           25    i.SetSysClockTo72   system_stm32f10x.o
+    0x08000b60   0x08000b60   0x00000002   Code   RO         3690    i.SysTick_Handler   stm32f10x_it.o
+    0x08000b62   0x08000b62   0x00000002   PAD
+    0x08000b64   0x08000b64   0x00000060   Code   RO           27    i.SystemInit        system_stm32f10x.o
+    0x08000bc4   0x08000bc4   0x00000080   Code   RO         2405    i.TI1_Config        stm32f10x_tim.o
+    0x08000c44   0x08000c44   0x00000098   Code   RO         2406    i.TI2_Config        stm32f10x_tim.o
+    0x08000cdc   0x08000cdc   0x00000020   Code   RO         3502    i.TIM2_PWM_GetCompare1  pwm.o
+    0x08000cfc   0x08000cfc   0x0000000c   Code   RO         3503    i.TIM2_PWM_GetDuty  pwm.o
+    0x08000d08   0x08000d08   0x00000010   Code   RO         3504    i.TIM2_PWM_SetCompare1  pwm.o
+    0x08000d18   0x08000d18   0x00000010   Code   RO         3505    i.TIM2_PWM_SetPrescaler  pwm.o
+    0x08000d28   0x08000d28   0x00000018   Code   RO         2421    i.TIM_Cmd           stm32f10x_tim.o
+    0x08000d40   0x08000d40   0x00000006   Code   RO         2436    i.TIM_GetCapture1   stm32f10x_tim.o
+    0x08000d46   0x08000d46   0x00000006   Code   RO         2437    i.TIM_GetCapture2   stm32f10x_tim.o
+    0x08000d4c   0x08000d4c   0x0000000c   Code   RO         2448    i.TIM_InternalClockConfig  stm32f10x_tim.o
+    0x08000d58   0x08000d58   0x00000098   Code   RO         2450    i.TIM_OC1Init       stm32f10x_tim.o
+    0x08000df0   0x08000df0   0x00000014   Code   RO         2468    i.TIM_OCStructInit  stm32f10x_tim.o
+    0x08000e04   0x08000e04   0x0000007c   Code   RO         2469    i.TIM_PWMIConfig    stm32f10x_tim.o
+    0x08000e80   0x08000e80   0x00000006   Code   RO         2470    i.TIM_PrescalerConfig  stm32f10x_tim.o
+    0x08000e86   0x08000e86   0x00000012   Code   RO         2474    i.TIM_SelectInputTrigger  stm32f10x_tim.o
+    0x08000e98   0x08000e98   0x00000012   Code   RO         2479    i.TIM_SelectSlaveMode  stm32f10x_tim.o
+    0x08000eaa   0x08000eaa   0x00000004   Code   RO         2482    i.TIM_SetCompare1   stm32f10x_tim.o
+    0x08000eae   0x08000eae   0x00000012   Code   RO         2487    i.TIM_SetIC1Prescaler  stm32f10x_tim.o
+    0x08000ec0   0x08000ec0   0x0000001a   Code   RO         2488    i.TIM_SetIC2Prescaler  stm32f10x_tim.o
+    0x08000eda   0x08000eda   0x00000002   PAD
+    0x08000edc   0x08000edc   0x000000a4   Code   RO         2492    i.TIM_TimeBaseInit  stm32f10x_tim.o
+    0x08000f80   0x08000f80   0x00000004   Code   RO         3691    i.UsageFault_Handler  stm32f10x_it.o
+    0x08000f84   0x08000f84   0x00000184   Code   RO         3650    i.main              main.o
+    0x08001108   0x08001108   0x000005f0   Data   RO         3409    .constdata          oled.o
+    0x080016f8   0x080016f8   0x00000020   Data   RO         3905    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08001720, Size: 0x00000670, Max: 0x00005000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08001718, Size: 0x00000670, Max: 0x00005000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x08001720   0x0000000c   Data   RW         3506    .data               pwm.o
-    0x2000000c   0x0800172c   0x00000004   Data   RW         3651    .data               main.o
+    0x20000000   0x08001718   0x0000000c   Data   RW         3506    .data               pwm.o
+    0x2000000c   0x08001724   0x00000004   Data   RW         3651    .data               main.o
     0x20000010        -       0x00000060   Zero   RW         3779    .bss                c_w.l(libspace.o)
     0x20000070        -       0x00000200   Zero   RW            2    HEAP                startup_stm32f10x_md.o
     0x20000270        -       0x00000400   Zero   RW            1    STACK               startup_stm32f10x_md.o
@@ -1368,7 +1367,7 @@ Image component sizes
        388         36          0          4          0        867   main.o
          0          0          0          0          0     201724   misc.o
        802         26       1520          0          0       8033   oled.o
-       236         24          0         12          0      32052   pwm.o
+       228         22          0         12          0      32052   pwm.o
         64         26        236          0       1536        844   startup_stm32f10x_md.o
        314          0          0          0          0      12556   stm32f10x_gpio.o
         26          0          0          0          0       4026   stm32f10x_it.o
@@ -1377,7 +1376,7 @@ Image component sizes
        328         28          0          0          0      30673   system_stm32f10x.o
 
     ----------------------------------------------------------------------
-      3854        320       1788         16       1536     342196   Object Totals
+      3846        318       1788         16       1536     342196   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         12          0          0          0          0          0   (incl. Padding)
 
@@ -1426,15 +1425,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      4132        336       1788         16       1632     339344   Grand Totals
-      4132        336       1788         16       1632     339344   ELF Image Totals
-      4132        336       1788         16          0          0   ROM Totals
+      4124        334       1788         16       1632     339344   Grand Totals
+      4124        334       1788         16       1632     339344   ELF Image Totals
+      4124        334       1788         16          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 5920 (   5.78kB)
+    Total RO  Size (Code + RO Data)                 5912 (   5.77kB)
     Total RW  Size (RW Data + ZI Data)              1648 (   1.61kB)
-    Total ROM Size (Code + RO Data + RW Data)       5936 (   5.80kB)
+    Total ROM Size (Code + RO Data + RW Data)       5928 (   5.79kB)
 
 ==============================================================================
 

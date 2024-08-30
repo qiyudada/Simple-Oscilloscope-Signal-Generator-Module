@@ -18,8 +18,8 @@ void Init_LED_GPIO(void)
     //设置输出类型，推挽输出，50Mhz
     gpio_output_options_set(GPIOC, GPIO_OTYPE_PP, GPIO_OSPEED_50MHZ, GPIO_PIN_15);
     //默认不开灯
-    CLose_LED(led2);
-    CLose_LED(led3);
+    Close_LED(led2);
+    Close_LED(led3);
 }
 
 /*
@@ -47,7 +47,7 @@ void Open_LED(uint8_t value)
 *   函数参数：无
 *   返回值：  无
 */
-void CLose_LED(uint8_t value)
+void Close_LED(uint8_t value)
 {
     switch(value)
     {

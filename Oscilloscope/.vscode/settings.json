@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "tft_init.h": "c",
+        "adc.h": "c",
+        "main.h": "c",
+        "oscilloscope.h": "c"
+    }
+}

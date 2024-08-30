@@ -4,7 +4,7 @@
 #include "gd32e23x.h"
 #include "systick.h"
 #include <stdio.h>
-#include "main.h"
+#include "oscilloscope.h"
 
 //»­±ÊÑÕÉ«
 #define WHITE         	 0xFFFF
@@ -35,7 +35,7 @@ void TFT_DrawPoint(uint16_t x,uint16_t y, uint16_t color);
 void TFT_DrawLine(uint16_t x1,uint16_t y1,uint16_t x2,uint16_t y2,uint16_t color);
 void TFT_DrawRectangle(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2,uint16_t color);
 void Draw_Circle(uint16_t x0,uint16_t y0,uint8_t r,uint16_t color);
-void drawCurve(uint8_t yOffset,short int rawValue);
+void Draw_Curve(uint8_t yOffset,short int rawValue);
 void TFT_ShowChar(uint16_t x,uint16_t y,uint8_t num,uint16_t fc,uint16_t bc,uint8_t sizey,uint8_t mode);
 void TFT_ShowString(uint16_t x,uint16_t y,const uint8_t *p,uint16_t fc,uint16_t bc,uint8_t sizey,uint8_t mode);
 void TFT_ShowChinese(uint16_t x,uint16_t y,uint8_t *s,uint16_t fc,uint16_t bc,uint8_t sizey,uint8_t mode);

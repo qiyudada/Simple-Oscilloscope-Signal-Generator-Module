@@ -26,4 +26,4 @@
   ../Firmware/GD32E23x_standard_peripheral/Include\gd32e23x_wwdgt.h \
   ../Firmware/GD32E23x_standard_peripheral/Include\gd32e23x_misc.h \
   ../Firmware/GD32E23x_standard_peripheral/Include\gd32e23x_cmp.h \
-  ../User/systick.h
+  ../User/main.h ../User/systick.h

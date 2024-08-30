@@ -1,22 +1,26 @@
 {
     "configurations": [
         {
-            "name": "GD32E230C8T6",
+            "name": "Target 1",
             "includePath": [
                 "d:\\2024710Embeded Learn\\My FreeRtos\\Simple-Oscilloscope-Signal-Generator-Module\\Oscilloscope\\User",
-                "d:\\2024710Embeded Learn\\My FreeRtos\\Simple-Oscilloscope-Signal-Generator-Module\\Oscilloscope\\Firmware\\CMSIS",
-                "d:\\2024710Embeded Learn\\My FreeRtos\\Simple-Oscilloscope-Signal-Generator-Module\\Oscilloscope\\Firmware\\CMSIS\\GD\\GD32E23x\\Include",
                 "d:\\2024710Embeded Learn\\My FreeRtos\\Simple-Oscilloscope-Signal-Generator-Module\\Oscilloscope\\Firmware\\GD32E23x_standard_peripheral\\Include",
+                "d:\\2024710Embeded Learn\\My FreeRtos\\Simple-Oscilloscope-Signal-Generator-Module\\Oscilloscope\\Firmware\\CMSIS\\GD\\GD32E23x\\Include",
+                "d:\\2024710Embeded Learn\\My FreeRtos\\Simple-Oscilloscope-Signal-Generator-Module\\Oscilloscope\\Firmware\\CMSIS",
                 "d:\\2024710Embeded Learn\\My FreeRtos\\Simple-Oscilloscope-Signal-Generator-Module\\Oscilloscope\\Hardware\\LED",
                 "d:\\2024710Embeded Learn\\My FreeRtos\\Simple-Oscilloscope-Signal-Generator-Module\\Oscilloscope\\Hardware\\TFT",
-                "d:\\2024710Embeded Learn\\My FreeRtos\\Simple-Oscilloscope-Signal-Generator-Module\\Oscilloscope\\Hardware\\ADC",
+                "d:\\2024710Embeded Learn\\My FreeRtos\\Simple-Oscilloscope-Signal-Generator-Module\\Oscilloscope\\Hardware\\EC11",
                 "d:\\2024710Embeded Learn\\My FreeRtos\\Simple-Oscilloscope-Signal-Generator-Module\\Oscilloscope\\Hardware\\USART",
-                "d:\\2024710Embeded Learn\\My FreeRtos\\Simple-Oscilloscope-Signal-Generator-Module\\Oscilloscope\\Hardware\\TIMER",
-                "d:\\2024710Embeded Learn\\My FreeRtos\\Simple-Oscilloscope-Signal-Generator-Module\\Oscilloscope\\Hardware\\KEY",
                 "d:\\2024710Embeded Learn\\My FreeRtos\\Simple-Oscilloscope-Signal-Generator-Module\\Oscilloscope\\Hardware\\FREQ",
+                "d:\\2024710Embeded Learn\\My FreeRtos\\Simple-Oscilloscope-Signal-Generator-Module\\Oscilloscope\\Hardware\\KEY",
+                "d:\\2024710Embeded Learn\\My FreeRtos\\Simple-Oscilloscope-Signal-Generator-Module\\Oscilloscope\\Hardware\\TIMER",
+                "d:\\2024710Embeded Learn\\My FreeRtos\\Simple-Oscilloscope-Signal-Generator-Module\\Oscilloscope\\Hardware\\ADC",
+                "d:\\2024710Embeded Learn\\My FreeRtos\\Simple-Oscilloscope-Signal-Generator-Module\\Oscilloscope\\BrickGame",
+                "d:\\2024710Embeded Learn\\My FreeRtos\\Simple-Oscilloscope-Signal-Generator-Module\\Oscilloscope\\Oscilloscope",
+                "d:\\2024710Embeded Learn\\My FreeRtos\\Simple-Oscilloscope-Signal-Generator-Module\\Oscilloscope\\Spectrometer",
                 "d:\\2024710Embeded Learn\\My FreeRtos\\Simple-Oscilloscope-Signal-Generator-Module\\Oscilloscope\\Firmware\\GD32E23x_standard_peripheral\\Source",
-                "d:\\2024710Embeded Learn\\My FreeRtos\\Simple-Oscilloscope-Signal-Generator-Module\\Oscilloscope\\Firmware\\CMSIS\\GD\\GD32E23x\\Source\\ARM",
-                "d:\\2024710Embeded Learn\\My FreeRtos\\Simple-Oscilloscope-Signal-Generator-Module\\Oscilloscope\\Firmware\\CMSIS\\GD\\GD32E23x\\Source"
+                "d:\\2024710Embeded Learn\\My FreeRtos\\Simple-Oscilloscope-Signal-Generator-Module\\Oscilloscope\\Firmware\\CMSIS\\GD\\GD32E23x\\Source",
+                "d:\\2024710Embeded Learn\\My FreeRtos\\Simple-Oscilloscope-Signal-Generator-Module\\Oscilloscope\\Firmware\\CMSIS\\GD\\GD32E23x\\Source\\ARM"
             ],
             "defines": [
                 "GD32E230",

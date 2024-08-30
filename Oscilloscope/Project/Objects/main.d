@@ -27,9 +27,9 @@
   ../Firmware/GD32E23x_standard_peripheral/Include\gd32e23x_misc.h \
   ../Firmware/GD32E23x_standard_peripheral/Include\gd32e23x_cmp.h \
   ../User/systick.h \
-  D:\Keil\ARM\ Start\ARM\ARMCLANG\Bin\..\include\string.h \
   D:\Keil\ARM\ Start\ARM\ARMCLANG\Bin\..\include\stdio.h \
-  ../Hardware/LED\led.h ../Hardware/TFT\tft.h ../User\main.h \
-  ../Hardware/TFT\tft_init.h ../Hardware/ADC\adc.h \
-  ../Hardware/USART\usart.h ../Hardware/TIMER\timer.h \
-  ../Hardware/KEY\key.h ../Hardware/FREQ\freq.h
+  D:\Keil\ARM\ Start\ARM\ARMCLANG\Bin\..\include\string.h \
+  ../Hardware/LED\led.h ../User/main.h ../Hardware/TFT\tft_init.h \
+  ../Hardware/TFT\tft.h ../Oscilloscope\oscilloscope.h \
+  ../Hardware/EC11\ec11.h ../Hardware/KEY\key.h ../BrickGame\brick.h \
+  ../Spectrometer\spectrometer.h

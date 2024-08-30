@@ -1,5 +1,8 @@
 #include "tft_init.h"
 
+// 供外部设置
+int USE_HORIZONTAL = 2;
+
 
 //#define TFT_SCL PA5
 //#define TFT_SDA PA7
